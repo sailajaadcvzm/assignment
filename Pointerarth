@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int m = 10, n = 5, s,d;
+    int *p1,*p2,*p3;
+    p1 = &m;    
+    p2 = &n;   
+    printf("p1 = %d\n", p1);
+    printf("p2 = %d\n", p2);
+    s = *p1+*p2;
+    printf("*p1+*p2 = %d\n", s);
+    d = *p1-*p2;
+    printf("*p1 - *p2 = %d\n", d); 
+    p1++;
+    printf("p1++ = %d\n", p1); 
+    p2--;
+    printf("p2-- = %d\n", p2);
+    return 0;
+}
